@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <title>コーディング練習</title>
+</head>
+
+
+<body>
+    <div class="l-wrapper">
+        <header class="l-header">
+            <div class="l-header__inner">
+                <!-- ロゴ -->
+                <h1 class="l-header__logo">
+                    <a href="index.html">
+                        <img src="./img/others/logo.png" alt="PON DESIGN">
+                    </a>
+                </h1>
+                <!-- グローバルナビ -->
+                <nav class="l-header__nav">
+                    <ul class="l-header__nav__list">
+                        <li class="l-header__nav__item"><a href="news.html" class="l-header__nav__link">NEWS</a></li>
+                        <li class="l-header__nav__item"><a href="service.html" class="l-header__nav__link">SERVICE</a></li>
+                        <li class="l-header__nav__item"><a href="works.html" class="l-header__nav__link">WORKS</a></li>
+                        <li class="l-header__nav__item"><a href="company.html" class="l-header__nav__link">COMPANY</a></li>
+                        <li class="l-header__nav__item"><a href="recruit.html" class="l-header__nav__link">RECRUIT</a></li>
+                        <li class="l-header__nav__item"><a href="contact.html" class="l-header__nav__link">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="navbar_toggle">
+                <span class="navbar_toggle_icon"></span>
+                <span class="navbar_toggle_icon"></span>
+                <span class="navbar_toggle_icon"></span>
+            </div><!-- ドロワー -->
+            
+            <div class="menu u-disappear">
+                <ul>
+                    <li><a href="news.html" class="drawer-item">NEWS</a></li>
+                    <li><a href="service.html" class="drawer-item">SERVICE</a></li>
+                    <li><a href="works.html" class="drawer-item">WORKS</a></li>
+                    <li><a href="company.html" class="drawer-item">COMPANY</a></li>
+                    <li><a href="recruit.html" class="drawer-item">RECRUIT</a></li>
+                    <li><a href="contact.html" class="drawer-item">CONTACT</a></li>
+                </ul>
+            </div><!-- 隠れメニュー -->
+        </header><!-- header -->
+        
+        <section class="c-sub-hero">
+            <div class="c-sub-hero__heading">
+                <h2 class="c-sub-hero__heading__title">CONTACT</h2>
+                <p class="c-sub-hero__heading__text">お問い合わせ</p>
+            </div>
+        </section><!-- sub-hero -->
+        
+        <div class="c-breadcrumb">
+            <div class="l-inner">
+                <ol itemscope itemtype="https://schema.org/ListItem" class="c-breadcrumb__list">
+                    <!-- １つ目 -->
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="c-breadcrumb__item">
+                        <a itemprop="item" class="c-breadcrumb__link" href="index.html">
+                            <span itemprop="name">HOME</span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="c-breadcrumb__item">
+                        <span itemprop="name">CONTACT</span>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                </ol>
+            </div>
+        </div><!-- breadcrumb -->
+        
+        <div class="l-page-contact contents" id="contents">
+            <section class="p-form l-section">
+                <div class="l-inner">
+                    <p class="p-form__lead">Webサイトの制作のご依頼やお見積もりなど、<br class="u-is-sm">お気軽にご相談ください。</p>
+                    <div class="p-form__wrapper">
+
+                        <form action="" class="p-form__body">
+                            <div class="p-form__item">
+                                <div class="p-form__title">お問い合わせ種別<span class="p-form__required">*必須</span></div>
+                                <span class="p-form__radio">
+                                    <input type="radio" id="type1" name="type" value="お仕事のご依頼・ご相談" checked>お仕事のご依頼・ご相談
+                                </span>
+                                <span class="p-form__radio">
+                                    <input type="radio">お見積もりのご依頼
+                                </span>
+                                <span class="p-form__radio">
+                                    <input type="radio">採用について
+                                </span>
+                                <span class="p-form__radio">
+                                    <input type="radio">その他
+                                </span>
+                            </div>
+                            <div class="p-form__item">
+                                <label for="name" class="p-form__title">お名前</label>
+                                <span class="p-form__input p-form__input__name">
+                                    <input type="text" id="name" name="name" required>
+                                </span>
+                            </div>
+                            <div class="p-form__item">
+                                <label for="company" class="p-form__title">会社名<span class="p-form__required">*必須</span></label>
+                                <span class="p-form__input p-form__input__company">
+                                    <input type="text" id="company" name="company" required>
+                                </span>
+                            </div>
+                            <div class="p-form__item">
+                                <label for="email" class="p-form__title">メールアドレス<span class="p-form__required">*必須</span></label>
+                                <span class="p-form__input p-form__input__mail">
+                                    <input type="text" id="email" name="email" required> 
+                                </span>
+                            </div>
+                            <div class="p-form__item">
+                                <label for="tel" class="p-form__title">お電話番号</label>
+                                <span class="p-form__input p-form__input__number">
+                                    <input type="tel" id="tel" name="tel" class="p-form__input p-form__input__number">
+                                </span>
+                            </div>
+                            <div class="p-form__item">
+                                <label for="comment"  class="p-form__title">お問い合わせ内容<span class="p-form__required">*必須</span></label>
+                                <span class="p-form__textarea">
+                                    <textarea name="" id="comment" cols="30" rows="10" placeholder="お問い合わせ内容を具体的にご記入くださいませ。"></textarea>
+                                </span>
+                            </div>
+                            <div class="p-form__item">
+                                <label class="p-form__title">PON DESIGNどちらでお知りになりましたか？<span class="p-form__required">*必須</span></label>
+                                <span class="p-form__select">
+                                    <select name="name" id="name">
+                                        <option value="select">選択してください</option>
+                                        <option value="search">Google/Yahoo検索</option>
+                                        <option value="sns">SNS</option>
+                                        <option value="blog">ブログ</option>
+                                        <option value="friends">友人や知人</option>
+                                        <option value="others">その他</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </form>
+                        <!-- ボタン -->
+                        <div class="c-btn-area">
+                            <a href="contact.html" class="c-btn c-btn--gradation">送信する</a>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- form -->
+        </div><!-- contents -->
+        
+        <footer class="l-footer">
+            <nav class="l-footer__nav">
+                <ul class="l-footer__nav__list">
+                    <li class="l-footer__nav__item"><a href="news.html" class="l-footer__nav__link">NEWS</a></li>
+                    <li class="l-footer__nav__item"><a href="service.html" class="l-footer__nav__link">SERVICE</a></li>
+                    <li class="l-footer__nav__item"><a href="works.html" class="l-footer__nav__link">WORKS</a></li>
+                    <li class="l-footer__nav__item"><a href="company.html" class="l-footer__nav__link">COMPANY</a></li>
+                    <li class="l-footer__nav__item"><a href="recruit.html" class="l-footer__nav__link">RECRUIT</a></li>
+                    <li class="l-footer__nav__item"><a href="contact.html" class="l-footer__nav__link">CONTACT</a></li>
+                </ul>
+            </nav>
+            <p class="c-copyright">&copy; PON DESIGN</p>
+        </footer><!-- footer -->
+        
+        <!-- ページトップへ移動 -->
+        <div id="pagetop" class="c-page-top">
+            <a class="c-page-top__link" href="#">
+                <i class="fas fa-arrow-up c-page-top__arrow"></i>
+            </a>
+        </div><!-- page-top -->
+    </div><!-- wrapper -->
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    </body>
+    </html>
